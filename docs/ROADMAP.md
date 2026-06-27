@@ -11,7 +11,15 @@ Only Phase 0 work exists in the repository today. Every later phase in this docu
 - Add component-safe script shells
 - Define package manifest example
 
-## Phase 1: Local Single-Player Core
+## Phase 1: Real Validation In ITsMagic
+
+- Create a minimal validation package for script-format testing
+- Test external `.java` class format in the editor
+- Test body-only editor paste format
+- Record compilation and attachment errors
+- Confirm the official script pattern for the rest of the project
+
+## Phase 2: Local Single-Player Core
 
 - Player state flow
 - Guardian equip flow
@@ -20,7 +28,7 @@ Only Phase 0 work exists in the repository today. Every later phase in this docu
 - Basic NPC interaction routing
 - Simple dialogue and quest progression
 
-## Phase 2: Combat Vertical Slice
+## Phase 3: Combat Vertical Slice
 
 - Player skill activation
 - Guardian skill activation
@@ -28,14 +36,14 @@ Only Phase 0 work exists in the repository today. Every later phase in this docu
 - Damage and drop resolution
 - Basic laboratory crafting loop
 
-## Phase 3: World Expansion
+## Phase 4: World Expansion
 
 - Open-world region structure
 - World-state ownership
 - Save boundaries
 - Content pipeline for NPCs, quests, and drops
 
-## Phase 4: Online Foundations
+## Phase 5: Online Foundations
 
 - Multiplayer validation research
 - Chat prototype
@@ -43,7 +51,7 @@ Only Phase 0 work exists in the repository today. Every later phase in this docu
 - Trade safety design
 - Guild structure planning
 
-## Phase 5: Package Distribution
+## Phase 6: Package Distribution
 
 - Finalize import conventions
 - Version package metadata

@@ -45,6 +45,15 @@ Official references used during this setup:
 - [ITsMagic documentation](https://itsmagic.com.br/documentation/docs/intro/)
 - [ITsMagic Documentation repository](https://github.com/ITsMagic-Software/Documentation)
 
+## Primeiro teste obrigatório no ITsMagic
+
+Antes de implementar `UIManager`, `InventoryManager`, `GuardianManager` ou qualquer outro sistema real, é obrigatório testar os dois formatos mínimos de script no editor do ITsMagic:
+
+- [scripts/validation/ExternalClassValidation.java](/C:/Users/claud/Documents/JOGO/scripts/validation/ExternalClassValidation.java)
+- [scripts/validation/EditorPasteValidation.java](/C:/Users/claud/Documents/JOGO/scripts/validation/EditorPasteValidation.java)
+
+O passo a passo do teste está em [docs/validation/ITSMAGIC_FIRST_TEST.md](/C:/Users/claud/Documents/JOGO/docs/validation/ITSMAGIC_FIRST_TEST.md). Só depois dessa validação o projeto deve fixar o padrão definitivo de script.
+
 ## Why the scripts are simple
 
 The current goal is to establish a safe modular base. Systems such as spawning, persistence, networking, UI widget rendering, and voice integration were not hard-coded because those APIs must be validated in the official ITsMagic documentation before implementation.
@@ -58,6 +67,7 @@ Where the engine integration is still unknown, the code uses only primitive fiel
 ## Suggested next steps
 
 1. Import the scripts into an ITsMagic project and validate compilation.
-2. Follow [docs/VALIDATION_CHECKLIST.md](/C:/Users/claud/Documents/JOGO/docs/VALIDATION_CHECKLIST.md) for the first engine-side review pass.
-3. Confirm the preferred script format in the ITsMagic editor versus external `.java` files.
-4. Only after validation, start a small local gameplay slice with `GameManager`, `UIManager`, `PlayerManager`, and `GuardianManager`.
+2. Run the minimum format test in [docs/validation/ITSMAGIC_FIRST_TEST.md](/C:/Users/claud/Documents/JOGO/docs/validation/ITSMAGIC_FIRST_TEST.md).
+3. Follow [docs/VALIDATION_CHECKLIST.md](/C:/Users/claud/Documents/JOGO/docs/VALIDATION_CHECKLIST.md) for the first engine-side review pass.
+4. Confirm the preferred script format in the ITsMagic editor versus external `.java` files.
+5. Only after validation, start a small local gameplay slice with `GameManager`, `UIManager`, `PlayerManager`, and `GuardianManager`.
