@@ -6,8 +6,4 @@ class InventoryManager extends Component {
         itemCount = 0;
         coinBalance = 0;
     }
-
-    void repeat() {
-        // Inventory transactions should remain data-driven once item definitions are validated.
-    }
 }

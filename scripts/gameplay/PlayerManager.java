@@ -6,8 +6,4 @@ class PlayerManager extends Component {
         playerLevel = 1;
         playerHealth = 100;
     }
-
-    void repeat() {
-        // Movement, stats, and progression hooks will be expanded in later phases.
-    }
 }

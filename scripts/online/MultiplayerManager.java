@@ -6,8 +6,4 @@ class MultiplayerManager extends Component {
         onlineModeEnabled = false;
         sessionConnected = false;
     }
-
-    void repeat() {
-        // Networking should remain disabled until official multiplayer APIs are confirmed.
-    }
 }

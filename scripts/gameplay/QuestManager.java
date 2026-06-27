@@ -6,8 +6,4 @@ class QuestManager extends Component {
         activeQuestCount = 0;
         trackedQuestId = "NONE";
     }
-
-    void repeat() {
-        // Objective tracking will remain simple until quest data and event hooks are defined.
-    }
 }

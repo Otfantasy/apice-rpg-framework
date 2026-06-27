@@ -6,8 +6,4 @@ class GuardianSkillManager extends Component {
         equippedSkillSlots = 3;
         guardianUltimateReady = false;
     }
-
-    void repeat() {
-        // Guardian skill timing and triggers will be implemented after guardian AI contracts exist.
-    }
 }

@@ -6,8 +6,4 @@ class ShopManager extends Component {
         shopOpen = false;
         activeShopId = "NONE";
     }
-
-    void repeat() {
-        // Buy and sell logic will be enabled after item and currency pipelines are defined.
-    }
 }

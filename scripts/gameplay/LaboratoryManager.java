@@ -6,8 +6,4 @@ class LaboratoryManager extends Component {
         laboratoryOpen = false;
         queuedRecipes = 0;
     }
-
-    void repeat() {
-        // Guardian creation and upgrades should wait for recipe data validation.
-    }
 }

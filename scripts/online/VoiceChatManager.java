@@ -6,8 +6,4 @@ class VoiceChatManager extends Component {
         voiceChatAvailable = false;
         microphoneEnabled = false;
     }
-
-    void repeat() {
-        // Voice integration will likely require an external service and is intentionally deferred.
-    }
 }

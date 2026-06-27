@@ -6,8 +6,4 @@ class GuardianManager extends Component {
         equippedGuardianId = "NONE";
         guardianSummoned = false;
     }
-
-    void repeat() {
-        // Follow behavior and guardian AI should be added after movement APIs are confirmed.
-    }
 }

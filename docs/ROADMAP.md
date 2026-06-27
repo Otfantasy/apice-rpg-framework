@@ -1,5 +1,9 @@
 # APICE RPG Framework Roadmap
 
+## Current State
+
+Only Phase 0 work exists in the repository today. Every later phase in this document is planned work, not implemented functionality.
+
 ## Phase 0: Foundation
 
 - Create repository structure

@@ -6,8 +6,4 @@ class ChatManager extends Component {
         chatVisible = true;
         unreadMessages = 0;
     }
-
-    void repeat() {
-        // Text chat transport and moderation hooks are planned for a later phase.
-    }
 }

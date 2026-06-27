@@ -6,8 +6,4 @@ class GameManager extends Component {
         frameworkState = "BOOTSTRAP";
         multiplayerEnabled = false;
     }
-
-    void repeat() {
-        // Reserve this loop for high-level game flow once engine integrations are confirmed.
-    }
 }

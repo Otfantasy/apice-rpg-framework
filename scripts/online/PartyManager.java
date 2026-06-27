@@ -6,8 +6,4 @@ class PartyManager extends Component {
         partyMemberCount = 1;
         partyInvitePending = false;
     }
-
-    void repeat() {
-        // Party sync and invite flows depend on confirmed online services.
-    }
 }

@@ -6,8 +6,4 @@ class GuildManager extends Component {
         guildJoined = false;
         guildName = "NONE";
     }
-
-    void repeat() {
-        // Guild systems are reserved for a future multiplayer milestone.
-    }
 }

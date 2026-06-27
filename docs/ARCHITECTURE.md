@@ -4,10 +4,27 @@
 
 This repository contains the initial modular structure for the APICE RPG Framework targeting ITsMagic. The current delivery focuses on safe foundations, clear ownership between systems, and low-risk script shells compatible with the `Component` lifecycle.
 
+## Status Boundary
+
+Already present in the repository:
+
+- Directory structure and file ownership by domain.
+- Minimal component shells with primitive placeholder state.
+- Planning documents for future implementation.
+
+Not implemented yet:
+
+- Runtime communication between managers.
+- UI construction.
+- Save/load behavior.
+- Online synchronization.
+- NPC spawning, combat resolution, or content loading.
+
 ## Design Principles
 
 - Keep every gameplay script as an isolated `Component`.
-- Use `start()` for setup and `repeat()` for frame-by-frame updates.
+- Use `start()` for setup.
+- Add `repeat()` only when a component truly needs frame-by-frame logic.
 - Avoid depending on undocumented ITsMagic APIs.
 - Document future integrations before implementing them.
 - Separate runtime managers from static databases and planning docs.
@@ -16,39 +33,39 @@ This repository contains the initial modular structure for the APICE RPG Framewo
 
 ### Core
 
-- `GameManager`: bootstraps global flow, feature flags, and shared state.
-- `EventSystem`: centralizes high-level event dispatch conventions.
-- `SaveManager`: owns save/load strategy planning and serialization boundaries.
-- `WorldManager`: tracks world-state concerns, regions, and streaming roadmap.
+- `GameManager`: stores bootstrap-level flags and placeholders.
+- `EventSystem`: stores placeholder event state only.
+- `SaveManager`: stores save-system readiness placeholders only.
+- `WorldManager`: stores placeholder region state only.
 
 ### UI
 
-- `UIManager`: coordinates HUD visibility, modal state, and notification entrypoints.
+- `UIManager`: stores placeholder HUD and modal state only.
 
 ### Gameplay
 
-- `PlayerManager`: player state, movement hooks, progression references.
-- `InventoryManager`: inventory slots, categories, and item transaction rules.
-- `GuardianManager`: active guardian state, follow behavior plan, summon lifecycle.
-- `CombatManager`: combat state machine, damage flow roadmap, encounter hooks.
-- `PlayerSkillManager`: player skill slots, cooldown planning, activation pipeline.
-- `GuardianSkillManager`: guardian skill slots, AI trigger planning, support logic.
-- `QuestManager`: quest state lifecycle and objective tracking conventions.
-- `DialogueManager`: dialogue sessions, branching rules, and presentation handoff.
-- `NPCManager`: NPC identity, interaction states, and spawn ownership.
-- `ShopManager`: buy/sell interfaces, currency checks, and catalog routing.
-- `LaboratoryManager`: guardian crafting and upgrade workflows.
-- `DropManager`: drop generation rules and pickup lifecycle planning.
+- `PlayerManager`: placeholder player level and health state.
+- `InventoryManager`: placeholder inventory counters.
+- `GuardianManager`: placeholder equipped-guardian state.
+- `CombatManager`: placeholder combat flags.
+- `PlayerSkillManager`: placeholder player skill slot state.
+- `GuardianSkillManager`: placeholder guardian skill slot state.
+- `QuestManager`: placeholder quest counters and tracking state.
+- `DialogueManager`: placeholder dialogue open/closed state.
+- `NPCManager`: placeholder NPC counters and focus state.
+- `ShopManager`: placeholder shop open/closed state.
+- `LaboratoryManager`: placeholder crafting queue state.
+- `DropManager`: placeholder drop counters only.
 
 ### Online
 
-- `MultiplayerManager`: authoritative online session roadmap and sync boundaries.
-- `ChatManager`: text chat channels, moderation hooks, and UI dispatch.
-- `VoiceChatManager`: placeholder for future voice provider integration.
-- `TradeManager`: future player-to-player trade validation flow.
-- `PartyManager`: group creation, invites, and party presence roadmap.
-- `FriendsManager`: friend list state and social interaction entrypoints.
-- `GuildManager`: guild membership, roles, and shared progression roadmap.
+- `MultiplayerManager`: placeholder online-mode flags only.
+- `ChatManager`: placeholder chat visibility and unread counters.
+- `VoiceChatManager`: placeholder voice capability flags only.
+- `TradeManager`: placeholder trade-session state.
+- `PartyManager`: placeholder party counters only.
+- `FriendsManager`: placeholder friend counters only.
+- `GuildManager`: placeholder guild membership state only.
 
 ### Databases
 
@@ -57,10 +74,11 @@ This repository contains the initial modular structure for the APICE RPG Framewo
 
 ## Communication Rules
 
+- These are target architecture rules, not code already implemented.
 - Core managers should be the only layer allowed to coordinate cross-system startup.
-- Gameplay managers may reference shared flags conceptually, but should avoid hard coupling until an event contract is formalized.
-- Online managers should remain optional and degrade gracefully when multiplayer is disabled.
-- Database scripts should stay read-only once loaded.
+- Gameplay managers should avoid hard coupling until an event contract is formalized.
+- Online managers should remain optional when multiplayer is disabled.
+- Database scripts should stay read-only once real loading is added.
 
 ## Safety Notes
 

@@ -6,8 +6,4 @@ class PlayerSkillManager extends Component {
         equippedSkillSlots = 3;
         ultimateReady = false;
     }
-
-    void repeat() {
-        // Skill cooldowns and casting should be connected once animation/input hooks are known.
-    }
 }

@@ -4,8 +4,4 @@ class SaveManager extends Component {
     void start() {
         saveSystemReady = false;
     }
-
-    void repeat() {
-        // Save and load behavior will be added only after persistence APIs are validated.
-    }
 }

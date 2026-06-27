@@ -6,8 +6,4 @@ class NPCManager extends Component {
         activeNpcCount = 0;
         focusedNpcId = "NONE";
     }
-
-    void repeat() {
-        // NPC interaction hooks depend on confirmed spawn and trigger APIs.
-    }
 }

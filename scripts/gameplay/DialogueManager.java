@@ -6,8 +6,4 @@ class DialogueManager extends Component {
         dialogueOpen = false;
         activeDialogueId = "NONE";
     }
-
-    void repeat() {
-        // Dialogue branching should be data-driven after UI and NPC contracts are formalized.
-    }
 }

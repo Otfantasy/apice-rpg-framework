@@ -3,7 +3,7 @@
   "displayName": "APICE RPG Framework",
   "version": "0.1.0",
   "engine": "ITsMagic",
-  "description": "Initial modular structure for an open-world RPG framework targeting ITsMagic.",
+  "description": "Draft example metadata for the APICE RPG Framework repository. This is not an official ITsMagic Marketplace package manifest.",
   "authors": [
     "APICE RPG Framework Team"
   ],
@@ -17,7 +17,8 @@
     "docs/ITSMAGIC_IMPORT_PLAN.md"
   ],
   "notes": [
-    "This is an example manifest for a future package-manager-ready release.",
-    "Adjust fields to the final ITsMagic package specification once officially documented."
+    "This file is only a repository-side draft example.",
+    "It does not claim compatibility with any official ITsMagic Marketplace schema yet.",
+    "Validate the real package specification before publishing anything installable."
   ]
 }
