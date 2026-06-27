@@ -1,0 +1,23 @@
+{
+  "name": "apice-rpg-framework",
+  "displayName": "APICE RPG Framework",
+  "version": "0.1.0",
+  "engine": "ITsMagic",
+  "description": "Initial modular structure for an open-world RPG framework targeting ITsMagic.",
+  "authors": [
+    "APICE RPG Framework Team"
+  ],
+  "entryPoints": [
+    "scripts/core/GameManager.java",
+    "scripts/ui/UIManager.java"
+  ],
+  "documentation": [
+    "docs/ARCHITECTURE.md",
+    "docs/ROADMAP.md",
+    "docs/ITSMAGIC_IMPORT_PLAN.md"
+  ],
+  "notes": [
+    "This is an example manifest for a future package-manager-ready release.",
+    "Adjust fields to the final ITsMagic package specification once officially documented."
+  ]
+}
