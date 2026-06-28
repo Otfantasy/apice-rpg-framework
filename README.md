@@ -55,6 +55,15 @@ Antes de implementar `UIManager`, `InventoryManager`, `GuardianManager` ou qualq
 
 O passo a passo do teste esta em [docs/validation/ITSMAGIC_FIRST_TEST.md](/C:/Users/claud/Documents/JOGO/docs/validation/ITSMAGIC_FIRST_TEST.md). So depois dessa validacao o projeto deve fixar o padrao definitivo de script.
 
+## Validacao no ITsMagic concluida
+
+The manual validation was completed successfully on 2026-06-27.
+
+- `ExternalClassValidation.java` worked in ITsMagic.
+- `EditorPasteValidation.java` also worked in ITsMagic.
+- The repository standard remains `class Name extends Component`.
+- Direct editor paste without class declaration is supported as an alternate workflow, not as the main repository format.
+
 ## Why the scripts are simple
 
 The current goal is to establish a safe modular base. Systems such as spawning, persistence, networking, UI widget rendering, and voice integration were not hard-coded because those APIs must be validated in the official ITsMagic documentation before implementation.

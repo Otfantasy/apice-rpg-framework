@@ -16,7 +16,15 @@ References:
 - [Component API](https://itsmagic.com.br/documentation/docs/java/Components/Component/)
 - [Laser example using `repeat()`](https://itsmagic.com.br/documentation/docs/topics/laser/UsingLaserAndLaserHit/)
 
-## Format Used In This Repository
+## Manual Validation Status
+
+Both formats below were validated manually inside ITsMagic on 2026-06-27.
+
+- The wrapped repository class format worked.
+- The direct editor-paste body format also worked.
+- No validation error was reported in either case.
+
+## Official Repository Format
 
 For versioned source files kept outside the engine editor, this repository uses the explicit wrapper:
 
@@ -36,9 +44,13 @@ Why this format is used:
 - It matches the Java API style shown in the official documentation.
 - It is the safest external-file representation when the repository is not embedded directly inside the editor.
 
-## Format Potentially Used When Pasting Into The ITsMagic Editor
+Repository standard:
 
-The task context states that ITsMagic can automatically declare the script as a component in the editor workflow. In that case, the pasted body may look like this:
+- Use `class Name extends Component` as the primary format for framework files.
+
+## Alternate Format For Direct Editor Paste
+
+When a script is pasted directly into the ITsMagic editor, the body-only format may look like this:
 
 ```java
 String frameworkState;
@@ -51,15 +63,12 @@ void start() {
 ## Practical Rule
 
 - Keep `class Name extends Component` in repository files.
-- If the ITsMagic editor auto-wraps component classes, paste only the inner body.
+- If the ITsMagic editor auto-wraps component classes, paste only the inner body when needed.
 - If the editor expects full Java class syntax, paste the repository version unchanged.
 
-## Review Conclusion
+## Current Conclusion
 
-The current repository format is acceptable for external source control.
-
-What still needs real validation in the engine:
-
-- Whether the editor accepts the wrapped class form directly.
-- Whether the editor prefers only the inner script body for pasted components.
-- Whether any project-specific script folder conventions must be followed.
+- The official repository format is `class Name extends Component`.
+- The alternate direct-paste format without class declaration is also valid.
+- Both formats were validated manually in ITsMagic.
+- The framework will continue to use the class-based format for organization and versioning.

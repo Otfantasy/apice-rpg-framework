@@ -4,6 +4,16 @@
 
 Validate that the current placeholder scripts can be imported into ITsMagic without introducing undocumented APIs or unsupported formatting.
 
+## Latest Result
+
+Manual validation completed on 2026-06-27.
+
+- `EditorPasteValidation.java`: compiled, saved, stayed attached to the object, and ran without errors.
+- `ExternalClassValidation.java`: compiled, saved, stayed attached to the object, and ran without errors.
+- No compiler, parser, attach, or runtime error message appeared during the validation.
+- Repository decision: keep `class Name extends Component` as the primary framework standard.
+- Alternate note: direct editor paste without class declaration also works, but remains a secondary workflow.
+
 ## Before Testing
 
 1. Start with a clean ITsMagic test project.
@@ -55,6 +65,8 @@ A script passes the first validation round when:
 - It compiles without undocumented engine calls.
 - It can be attached as a component.
 - It does not require extra imports to be recognized.
+
+The two validation scripts already passed these criteria on 2026-06-27.
 
 ## If A Test Fails
 
