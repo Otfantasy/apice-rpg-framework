@@ -64,6 +64,17 @@ The manual validation was completed successfully on 2026-06-27.
 - The repository standard remains `class Name extends Component`.
 - Direct editor paste without class declaration is supported as an alternate workflow, not as the main repository format.
 
+## Fase 3 - UIManager v1
+
+`UIManager v1` is the first functional system now implemented in the framework.
+
+- It manages HUD visibility state.
+- It manages single-modal open and close rules.
+- It stores the last notification message without rendering it yet.
+- It avoids unconfirmed ITsMagic visual APIs and stays focused on internal state logic.
+
+See [docs/systems/UI_MANAGER.md](/C:/Users/claud/Documents/JOGO/docs/systems/UI_MANAGER.md) and [docs/PHASE_3_UI_MANAGER.md](/C:/Users/claud/Documents/JOGO/docs/PHASE_3_UI_MANAGER.md) for the current implementation scope.
+
 ## Why the scripts are simple
 
 The current goal is to establish a safe modular base. Systems such as spawning, persistence, networking, UI widget rendering, and voice integration were not hard-coded because those APIs must be validated in the official ITsMagic documentation before implementation.
@@ -76,8 +87,6 @@ Where the engine integration is still unknown, the code uses only primitive fiel
 
 ## Suggested next steps
 
-1. Import the scripts into an ITsMagic project and validate compilation.
-2. Run the minimum format test in [docs/validation/ITSMAGIC_FIRST_TEST.md](/C:/Users/claud/Documents/JOGO/docs/validation/ITSMAGIC_FIRST_TEST.md).
-3. Follow [docs/VALIDATION_CHECKLIST.md](/C:/Users/claud/Documents/JOGO/docs/VALIDATION_CHECKLIST.md) for the first engine-side review pass.
-4. Confirm the preferred script format in the ITsMagic editor versus external `.java` files.
-5. Only after validation, start a small local gameplay slice with `GameManager`, `UIManager`, `PlayerManager`, and `GuardianManager`.
+1. Validate `UIManager v1` in ITsMagic using `scripts/validation/UIManagerValidation.java`.
+2. Confirm how runtime field values can be inspected reliably in the editor.
+3. Expand only one safe integration path at a time after `UIManager` validation.

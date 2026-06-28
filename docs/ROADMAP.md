@@ -2,16 +2,20 @@
 
 ## Current State
 
-Only Phase 0 work exists in the repository today. Every later phase in this document is planned work, not implemented functionality.
+Phase 1 foundation is complete.
+Phase 2 script-format validation in ITsMagic is complete.
+Phase 3 `UIManager v1` is now implemented as the first functional runtime system.
 
-## Phase 0: Foundation
+## Phase 1: Foundation
 
 - Create repository structure
 - Write architecture and import documentation
 - Add component-safe script shells
 - Define package manifest example
 
-## Phase 1: Real Validation In ITsMagic
+## Phase 2: Real Validation In ITsMagic
+
+Status: completed
 
 - Create a minimal validation package for script-format testing
 - Test external `.java` class format in the editor
@@ -19,7 +23,19 @@ Only Phase 0 work exists in the repository today. Every later phase in this docu
 - Record compilation and attachment errors
 - Confirm the official script pattern for the rest of the project
 
-## Phase 2: Local Single-Player Core
+## Phase 3: UIManager v1
+
+Status: completed
+
+- Implement safe internal HUD state
+- Implement safe modal state transitions
+- Implement internal notification state
+- Avoid unconfirmed visual APIs
+- Prepare future manager integration points
+
+## Phase 4: Local Single-Player Core
+
+Status: planned
 
 - Player state flow
 - Guardian equip flow
@@ -28,7 +44,9 @@ Only Phase 0 work exists in the repository today. Every later phase in this docu
 - Basic NPC interaction routing
 - Simple dialogue and quest progression
 
-## Phase 3: Combat Vertical Slice
+## Phase 5: Combat Vertical Slice
+
+Status: planned
 
 - Player skill activation
 - Guardian skill activation
@@ -36,14 +54,18 @@ Only Phase 0 work exists in the repository today. Every later phase in this docu
 - Damage and drop resolution
 - Basic laboratory crafting loop
 
-## Phase 4: World Expansion
+## Phase 6: World Expansion
+
+Status: planned
 
 - Open-world region structure
 - World-state ownership
 - Save boundaries
 - Content pipeline for NPCs, quests, and drops
 
-## Phase 5: Online Foundations
+## Phase 7: Online Foundations
+
+Status: planned
 
 - Multiplayer validation research
 - Chat prototype
@@ -51,7 +73,9 @@ Only Phase 0 work exists in the repository today. Every later phase in this docu
 - Trade safety design
 - Guild structure planning
 
-## Phase 6: Package Distribution
+## Phase 8: Package Distribution
+
+Status: planned
 
 - Finalize import conventions
 - Version package metadata
