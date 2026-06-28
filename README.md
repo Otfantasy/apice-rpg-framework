@@ -26,6 +26,7 @@ What does not exist yet:
 - `scripts/gameplay/`: gameplay manager placeholders for player, guardians, combat, quests, shops, and related systems.
 - `scripts/online/`: multiplayer and social system placeholders.
 - `scripts/database/`: static data ownership placeholders.
+- `scripts/validation/`: minimum validation scripts for ITsMagic format testing.
 - `package-manifest-example.json`: starter example for future package distribution.
 
 ## ITsMagic compatibility notes
@@ -45,14 +46,14 @@ Official references used during this setup:
 - [ITsMagic documentation](https://itsmagic.com.br/documentation/docs/intro/)
 - [ITsMagic Documentation repository](https://github.com/ITsMagic-Software/Documentation)
 
-## Primeiro teste obrigatório no ITsMagic
+## Primeiro teste obrigatorio no ITsMagic
 
-Antes de implementar `UIManager`, `InventoryManager`, `GuardianManager` ou qualquer outro sistema real, é obrigatório testar os dois formatos mínimos de script no editor do ITsMagic:
+Antes de implementar `UIManager`, `InventoryManager`, `GuardianManager` ou qualquer outro sistema real, e obrigatorio testar os dois formatos minimos de script no editor do ITsMagic:
 
 - [scripts/validation/ExternalClassValidation.java](/C:/Users/claud/Documents/JOGO/scripts/validation/ExternalClassValidation.java)
 - [scripts/validation/EditorPasteValidation.java](/C:/Users/claud/Documents/JOGO/scripts/validation/EditorPasteValidation.java)
 
-O passo a passo do teste está em [docs/validation/ITSMAGIC_FIRST_TEST.md](/C:/Users/claud/Documents/JOGO/docs/validation/ITSMAGIC_FIRST_TEST.md). Só depois dessa validação o projeto deve fixar o padrão definitivo de script.
+O passo a passo do teste esta em [docs/validation/ITSMAGIC_FIRST_TEST.md](/C:/Users/claud/Documents/JOGO/docs/validation/ITSMAGIC_FIRST_TEST.md). So depois dessa validacao o projeto deve fixar o padrao definitivo de script.
 
 ## Why the scripts are simple
 
